@@ -1,1 +1,7 @@
-// Начните писать стили здесь
+@use "fonts.scss";
+
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
