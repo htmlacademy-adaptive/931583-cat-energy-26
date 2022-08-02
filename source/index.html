@@ -9,11 +9,17 @@
 
 <body class="page">
 
-  <header class="page-header container">
-    <a class="page-header__logo" href="/">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
-    </a>
+  <header class="page-header">
+    <div class="page-header__logo-wrap">
+      <a class="page-header__logo-link" href="/">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи">
+      </a>
+      <a class="page-header__logo-sign-link" href="/">
+        <img class="page-header__logo-image" src="img/logo-mobile-2.svg" width="101" height="18" alt="Кэт энерджи">
+      </a>
+    </div>
     <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-menu">
         <li class="main-menu__item">
           <a class="main-menu__link">Главная</a>
@@ -25,19 +31,20 @@
           <a class="main-menu__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Cat energy - функциональное питание для котов</h1>
 
-    <section class="program container">
-      <h2 class="program__title">Функциональное питание для котов</h2>
-      <p class="program__text">Занялся собой? Займись котом!</p>
-      <img class="program__image" src="img/cat-energy-food.png" width="280" height="270"
-        alt="Питание для котов Сat enegry со вкусом курицы">
-      <a class="program__button button" href="form.html">Подобрать программу</a>
+    <section class="program">
+      <div class="container">
+        <h2 class="program__title">Функциональное питание для котов</h2>
+        <p class="program__text">Занялся собой? Займись котом!</p>
+        <img class="program__image" src="img/cat-energy-food.png" width="280" height="270"
+          alt="Питание для котов Сat enegry со вкусом курицы">
+        <a class="program__button button" href="form.html">Подобрать программу</a>
+      </div>
     </section>
 
     <section class="categories container">
@@ -96,11 +103,11 @@
         <img class="effect-slider__image" src="img/effect-cat-before.png" width="280" height="232"
           alt="Корм для котов Cat Energy Pro">
         <div class="effect-slider__range range">
-            <span class="range__text range__text--before">Было</span>
-            <div class="range__bar">
-              <span class="range__bar-fill">Ползунок</span>
-            </div>
-            <span class="range__text range__text--after">Стало</span>
+          <span class="range__text range__text--before">Было</span>
+          <div class="range__bar">
+            <span class="range__bar-fill">Ползунок</span>
+          </div>
+          <span class="range__text range__text--after">Стало</span>
         </div>
       </div>
     </section>

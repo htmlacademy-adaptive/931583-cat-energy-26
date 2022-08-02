@@ -1,0 +1,36 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+$main-font: "Arial", sans-serif;
+$title-font: "Oswald", "Arial", sans-serif;
+
+$color-text: #444444;
+$color-text-second: #000000;
+$color-text-third: #ffffff;
+$color-text-hover: rgba(0, 0, 0, 0.6);
+$color-text-down: rgba(0, 0, 0, 0.3);
+
+$color-border: #ebebeb;
+$color-border-hover: #cdcdcd;
+$color-border-focus: #444444;
+$color-border-error: #ff8282;
+
+$color-control-border: #cdcdcd;
+$color-control-border-hv: #bababa;
+
+$color-base: #ffffff;
+$color-bg: #69b738;
+$color-bg-hover: #5eaa2f;
+$color-bg-second: #f2f2f2;
+$color-bg-second-hover: #ebebeb;
+
+$color-text-btn: #ffffff;
+$color-text-btn-hover: rgba(255, 255, 255, 0.3);
+
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

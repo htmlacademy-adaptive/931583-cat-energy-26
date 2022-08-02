@@ -1,0 +1,20 @@
+.main-menu {
+  @include reset-list;
+}
+
+.main-menu__item {
+  padding: 22px 0 24px;
+  border-top: 1px solid $color-border;
+}
+
+.main-menu__link {
+  display: block;
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $color-text-second;
+}
