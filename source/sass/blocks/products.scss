@@ -1,0 +1,10 @@
+.products {
+  @include reset-list;
+  display: grid;
+}
+
+.products__item {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $color-border;
+}
