@@ -1,8 +1,10 @@
-.program {
+.program__wrap {
   position: relative;
+  padding-top: 27px;
+  margin-bottom: 20px;
 }
 
-.program::before {
+.program__wrap::before {
   position: absolute;
   content: "";
   top: 0;
@@ -16,7 +18,9 @@
 }
 
 .program__title {
-  font-family: $title-font;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: $font-title;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -26,7 +30,9 @@
 }
 
 .program__text {
-  font-family: $title-font;
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-family: $font-title;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

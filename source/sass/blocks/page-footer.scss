@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: $color-bg-second;
+}
+
+.page-footer__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo-wrap {
+  padding-top: 39px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $color-border-second;
+}
+
+.page-footer__logo-image {
+  display: block;
+}
+
+.page-footer__social {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $color-border-second;
+}
+
+.page-footer__copyright {
+  padding-top: 22px;
+  padding-bottom: 26px;
+}

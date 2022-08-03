@@ -1,0 +1,33 @@
+.contacts__wrap {
+  padding-top: 26px;
+}
+
+.contacts__text-wrap {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 139px 139px;
+  gap: 2px;
+}
+
+.contacts__welcome {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-text-second;
+}
+
+.contacts__address {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-second;
+}
+
+.contacts__map {
+  min-height: 362px;
+  background-image: url("/img/location.png");
+}
