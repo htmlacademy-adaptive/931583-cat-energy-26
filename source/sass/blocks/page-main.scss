@@ -1,6 +1,8 @@
 .page-main__title {
   padding-top: 27px;
   padding-bottom: 41px;
+  margin-top: 0;
+  margin-bottom: 8px;
   font-family: $font-title;
   font-weight: 400;
   font-size: 36px;
@@ -8,4 +10,12 @@
   color: $color-text-second;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
+}
+
+.page-main__catalog {
+  margin-bottom: 25px;
+}
+
+.page-main__additionally {
+  margin-bottom: 25px;
 }

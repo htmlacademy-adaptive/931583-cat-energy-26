@@ -5,12 +5,13 @@
 .product__image-link {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 140px;
   min-height: 112px;
 }
 
 .product__title {
+  width: 76px;
   margin-top: 0;
   margin-bottom: 18px;
   font-family: $font-title;
@@ -28,9 +29,24 @@
 
 .product__wrap {
   display: flex;
+  margin-bottom: 13px;
 }
 
 .product__content-wrap {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+}
+
+.product__description-cell {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+}
+
+.product__description-row {
+  display: flex;
+  justify-content: space-between;
 }
