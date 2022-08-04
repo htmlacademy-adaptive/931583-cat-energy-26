@@ -1,0 +1,43 @@
+.program__wrap {
+  position: relative;
+  padding-top: 27px;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 305px;
+    background: linear-gradient(180deg, $color-bg 0, $color-bg 302px, #ffffff 302px, #ffffff 100%);
+    background-image: url("../img/program-background-mobile.jpg");
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+.program__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-text-third;
+}
+
+.program__text {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-third;
+}

@@ -1,0 +1,15 @@
+.range {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range__text {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}

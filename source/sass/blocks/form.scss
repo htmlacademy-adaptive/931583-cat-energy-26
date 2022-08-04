@@ -1,0 +1,100 @@
+.form {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-text-second;
+}
+
+.form__explanation {
+  margin-top: 0;
+  margin-bottom: 39px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-text-second;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.form__field-wrap {
+  display: grid;
+  gap: 13px;
+}
+
+.form__label {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-text;
+
+  &--radio {
+    color: $color-text-product;
+  }
+
+  &--checkbox {
+    color: $color-text-second;
+  }
+}
+
+.form__title-group {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-text-second;
+}
+
+.form__control {
+  &::placeholder {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+}
+
+.form__textarea {
+  &::placeholder {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+}
+
+.form__send-button {
+  margin-bottom: 21px;
+}
+
+.form__send-text {
+  margin: 0;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-text-second;
+}

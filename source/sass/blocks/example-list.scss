@@ -1,0 +1,27 @@
+.example-list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-list__value {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-second;
+}
+
+.example-list__desc {
+  margin: 0;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: $color-text;
+}

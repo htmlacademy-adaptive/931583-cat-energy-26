@@ -1,0 +1,13 @@
+.categories__wrap {
+  margin-bottom: 20px;
+}
+
+.categories__list {
+  @include reset-list;
+  display: grid;
+  gap: 20px;
+}
+
+.categories__item {
+  padding: 30px 20px 18px;
+}

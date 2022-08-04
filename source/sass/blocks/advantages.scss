@@ -1,0 +1,30 @@
+.advantages__wrap {
+  margin-bottom: 49px;
+}
+
+.advantages__list {
+  @include reset-list;
+  display: grid;
+  gap: 20px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $color-text-second;
+}
+
+.advantages__text {
+  margin: 0;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+}

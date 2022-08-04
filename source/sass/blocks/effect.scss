@@ -1,0 +1,43 @@
+.effect {
+  background-color: $color-bg-second;
+}
+
+.effect__wrap {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.effect__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $color-text-second;
+}
+
+.effect__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+}
+
+.effect__example-wrap {
+  margin-bottom: 20px;
+}
+
+.effect__example-price {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-second;
+}
