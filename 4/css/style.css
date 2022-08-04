@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Arial", "Arial Narrow", sans-serif;
   font-weight: 400;
@@ -58,8 +58,8 @@ img {
   width: 100%;
   padding: 7px 0;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -67,20 +67,19 @@ img {
   text-decoration: none;
   border: none;
 }
-
+.button--program {
+  font-size: 14px;
+  line-height: 18px;
+}
 .button--second {
   color: #444444;
   background-color: #f2f2f2;
 }
 
 .container {
+  margin: 0 auto;
   padding: 0 20px;
-}
-
-.page {
   width: 320px;
-  background-color: #ffffff;
-  color: #444444;
 }
 
 .page-header__wrap {
@@ -162,7 +161,7 @@ img {
   right: 0;
   height: 305px;
   background: linear-gradient(180deg, #69b738 0, #69b738 302px, #ffffff 302px, #ffffff 100%);
-  background-image: url("/img/program-background-mobile.jpg");
+  background-image: url("../img/program-background-mobile.jpg");
   background-position: center;
   z-index: -1;
 }
@@ -241,7 +240,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
+  color: #000000;
 }
 
 .advantages__wrap {
@@ -277,10 +276,13 @@ img {
   color: #444444;
 }
 
+.effect {
+  background-color: #f2f2f2;
+}
+
 .effect__wrap {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: #f2f2f2;
 }
 
 .effect__title {
@@ -402,12 +404,15 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #444444;
 }
 
 .contacts__map {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
   min-height: 362px;
-  background-image: url("/img/location.png");
+  background: url("../img/location.png") no-repeat;
 }
 
 .page-footer {
@@ -476,8 +481,8 @@ img {
   display: grid;
 }
 
-.products__item {
-  padding: 19px 20px 25px;
+.product {
+  padding: 19px 0 25px;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -547,7 +552,7 @@ img {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #111111;
 }
 
 .catalog-show__text-small {
@@ -625,7 +630,7 @@ img {
 
 .promo {
   padding: 187px 60px 43px;
-  background: url("/img/gifts.png") no-repeat;
+  background: url("../img/gifts.png") no-repeat rgba(105, 183, 56, 0.85);
 }
 
 .promo__text {
@@ -684,7 +689,13 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #444444;
+}
+.form__label--radio {
   color: #222222;
+}
+.form__label--checkbox {
+  color: #000000;
 }
 
 .form__title-group {
@@ -695,6 +706,24 @@ img {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+}
+
+.form__control::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
 }
 
 .form__send-button {
