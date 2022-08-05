@@ -1,5 +1,13 @@
 .categories__wrap {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .categories__list {

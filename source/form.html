@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Кэт энерджи: Подбор программы</title>
 </head>
@@ -10,7 +11,7 @@
 <body class="page">
 
   <header class="page-header container">
-    <div class="page-header__wrap">
+    <div class="page-header__button-logo-wrap">
       <div class="page-header__logo-wrap">
         <a class="page-header__logo-link" href="/">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
@@ -20,9 +21,11 @@
           <img class="page-header__logo-image" src="img/logo-mobile-2.svg" width="101" height="18" alt="Кэт энерджи">
         </a>
       </div>
-      <button class="main-nav-toggle main-nav-toggle--opened" type="button">Показать меню</button>
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
     </div>
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="/">Главная</a>

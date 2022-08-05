@@ -1,8 +1,24 @@
-.page-header__wrap {
-  padding: 10px 20px 18px;
+.page-header {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $dekstop-width) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__button-logo-wrap {
+  padding: 10px 0 17px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $color-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-header__logo-wrap {
@@ -10,6 +26,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
 .page-header__logo-image {

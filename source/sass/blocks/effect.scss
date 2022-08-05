@@ -26,13 +26,43 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-text;
+
+  @media (min-width: $dekstop-width) {
+    width: 436px;
+  }
 }
 
 .effect__example-wrap {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $dekstop-width) {
+    flex-direction: column;
+  }
+}
+
+.effect__example-list {
+  @include reset-list;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .effect__example-price {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: $font-title;
   font-weight: 400;
   font-size: 14px;
@@ -40,4 +70,25 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-text-second;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $dekstop-width) {
+    text-align: left;
+  }
+}
+
+.effect__example-price-value {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: left;
+  }
+
+  @media (min-width: $dekstop-width) {
+    display: inline;
+    margin-left: 63px;
+  }
 }

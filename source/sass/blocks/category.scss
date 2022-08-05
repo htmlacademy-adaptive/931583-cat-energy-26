@@ -3,6 +3,7 @@
 }
 
 .category__title {
+  margin-left: 78px;
   margin-top: 0;
   margin-bottom: 29px;
   font-family: $font-title;
@@ -11,6 +12,14 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $color-text-second;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-left: 100px;
+  }
 }
 
 .category__text {
