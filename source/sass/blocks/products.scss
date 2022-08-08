@@ -1,4 +1,14 @@
 .products {
   @include reset-list;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
 }

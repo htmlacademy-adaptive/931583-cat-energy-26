@@ -5,6 +5,11 @@
 .effect__wrap {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $dekstop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .effect__title {
@@ -14,7 +19,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: $color-text-second;
 }
 

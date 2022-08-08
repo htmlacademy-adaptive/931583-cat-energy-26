@@ -24,6 +24,14 @@
   color: $color-text-second;
 }
 
+@media (min-width: $dekstop-width) {
+  .form__fieldset-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .form__fieldset {
   margin: 0;
   padding: 0;
@@ -34,6 +42,29 @@
 .form__field-wrap {
   display: grid;
   gap: 13px;
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px 32px;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 104px 32px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $dekstop-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 78px 32px;
+    }
+  }
+}
+
+.form__field {
+  display: flex;
 }
 
 .form__label {
@@ -64,6 +95,8 @@
 }
 
 .form__control {
+  width: 100%;
+
   &::placeholder {
     font-family: $font-title;
     font-weight: 400;
@@ -75,6 +108,8 @@
 }
 
 .form__textarea {
+  width: 100%;
+
   &::placeholder {
     font-family: $font-title;
     font-weight: 400;
@@ -85,8 +120,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__send {
+    display: flex;
+  }
+}
+
 .form__send-button {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    width: 568px;
+    margin-right: 81px;
+  }
 }
 
 .form__send-text {

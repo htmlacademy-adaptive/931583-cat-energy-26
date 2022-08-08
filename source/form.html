@@ -46,45 +46,48 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__explanation">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <fieldset class="form__fieldset">
-        <div class="form__field-wrap">
-          <div class="form__field">
-            <label class="form__label form__label--text" for="name">Имя:*</label>
-            <input class="form__control form__control--text" type="text" placeholder="Барсик" name="name" id="name"
-              required>
-          </div>
-          <div class="form__field">
-            <label class="form__label form__label--text" for="weight">Вес (кг):*</label>
-            <input class="form__control form__control--text" type="text" placeholder="7" name="weight" id="weight"
-              required>
-          </div>
-          <div class="form__field">
-            <label class="form__label form__label--text" for="age">Возраст (лет):</label>
-            <input class="form__control form__control--text" type="text" placeholder="7" name="age" id="age">
-          </div>
-        </div>
-      </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--line">
-        <div class="form__field-wrap">
-          <div class="form__field">
-            <input class="form__radio" type="radio" id="radio-1" name="choice" value="slim" checked>
-            <label class="form__label form__label--radio" for="radio-1">Похудение</label>
+      <div class="form__fieldset-wrap">
+        <fieldset class="form__fieldset">
+          <div class="form__field-wrap">
+            <div class="form__field">
+              <label class="form__label form__label--text" for="name">Имя:*</label>
+              <input class="form__control form__control--text" type="text" placeholder="Барсик" name="name" id="name"
+                required>
+            </div>
+            <div class="form__field">
+              <label class="form__label form__label--text" for="weight">Вес (кг):*</label>
+              <input class="form__control form__control--text" type="text" placeholder="7" name="weight" id="weight"
+                required>
+            </div>
+            <div class="form__field">
+              <label class="form__label form__label--text" for="age">Возраст (лет):</label>
+              <input class="form__control form__control--text" type="text" placeholder="7" name="age" id="age">
+            </div>
           </div>
-          <div class="form__field">
-            <input class="form__radio" type="radio" id="radio-2" name="choice" value="fat">
-            <label class="form__label form__label--radio" for="radio-2">Набор массы</label>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__fieldset--line">
+          <div class="form__field-wrap">
+            <div class="form__field">
+              <input class="form__radio" type="radio" id="radio-1" name="choice" value="slim" checked>
+              <label class="form__label form__label--radio" for="radio-1">Похудение</label>
+            </div>
+            <div class="form__field">
+              <input class="form__radio" type="radio" id="radio-2" name="choice" value="fat">
+              <label class="form__label form__label--radio" for="radio-2">Набор массы</label>
+            </div>
+            <div class="form__field">
+              <input class="form__radio" type="radio" id="radio-3" name="choice" value="dont-know">
+              <label class="form__label form__label--radio" for="radio-3">Не знаю (Нужен ваш совет)</label>
+            </div>
           </div>
-          <div class="form__field">
-            <input class="form__radio" type="radio" id="radio-3" name="choice" value="dont-know">
-            <label class="form__label form__label--radio" for="radio-3">Не знаю (Нужен ваш совет)</label>
-          </div>
-        </div>
-      </fieldset>
+        </fieldset>
+      </div>
 
       <fieldset class="form__fieldset">
         <p class="form__title-group">Контактные данные (владельца кота)</p>
-        <div class="form__field-wrap">
+        <div class="form__field-wrap form__field-wrap--contacts">
           <div class="form__field">
             <label class="form__label form__label--text" for="email">E-mail:*</label>
             <input class="form__control form__control--email" type="email" placeholder="kuklachev@gmail.com"
@@ -106,7 +109,7 @@
 
       <fieldset class="form__fieldset">
         <p class="form__title-group">Дополнительно</p>
-        <div class="form__field-wrap">
+        <div class="form__field-wrap form__field-wrap--checkbox">
           <div class="form__field">
             <input class="form__checkbox" type="checkbox" name="sweetener" id="check-1" checked>
             <label class="form__label form__label--checkbox" for="check-1">Сахарозаменитель</label>
