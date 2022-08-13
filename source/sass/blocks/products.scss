@@ -12,3 +12,20 @@
     gap: 60px;
   }
 }
+
+.products__item {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: #d9d9d9;
+      width: calc(100% + 40px);
+    }
+  }
+}
