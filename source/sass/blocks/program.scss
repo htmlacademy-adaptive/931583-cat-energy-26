@@ -1,19 +1,32 @@
+.program {
+  padding-top: 27px;
+}
+
 .program__wrap {
   position: relative;
-  padding-top: 27px;
   margin-bottom: 20px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 305px;
-    background: linear-gradient(180deg, $color-bg 0, $color-bg 302px, #ffffff 302px, #ffffff 100%);
-    background-image: url("../img/program-background-mobile.jpg");
-    background-position: center;
-    z-index: -1;
+  @media (max-width: $tablet-width) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 302px;
+      z-index: -1;
+    }
+
+    &::after {
+      background-image: url("../img/program-background-mobile.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      background: linear-gradient(180deg, $color-bg 0, $color-bg 302px, #ffffff 302px, #ffffff 100%);
+    }
   }
 }
 
@@ -41,3 +54,10 @@
   text-transform: uppercase;
   color: $color-text-third;
 }
+
+// .program__image {
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     bottom: 0;
+//   }
+// }

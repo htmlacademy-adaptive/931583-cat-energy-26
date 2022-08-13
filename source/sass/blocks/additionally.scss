@@ -1,3 +1,11 @@
+@media (min-width: $dekstop-width) {
+  .additionally_wrap {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 79px;
+  }
+}
+
 .additionally__header-title {
   margin-top: 0;
   font-family: $font-title;
@@ -17,6 +25,11 @@
   &:last-child {
     border-bottom: 1px solid $color-border;
   }
+
+  @media (min-width: $dekstop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .additionally__list {
@@ -34,6 +47,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-text-product;
+
+  @media (min-width: $dekstop-width) {
+    min-width: 325px;
+    margin-bottom: 0;
+  }
 }
 
 .additionally__quantity {
@@ -43,6 +61,11 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-text;
+
+  @media (min-width: $dekstop-width) {
+    min-width: 244px;
+    margin-bottom: 0;
+  }
 }
 
 .additionally__price {
@@ -53,8 +76,18 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-text;
+
+  @media (min-width: $dekstop-width) {
+    min-width: 82px;
+    margin-bottom: 0;
+  }
 }
 
 .additionally__button {
   grid-column: 1 / 3;
+
+  @media (min-width: $dekstop-width) {
+    grid-column: none;
+    width: 244px;
+  }
 }

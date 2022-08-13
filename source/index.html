@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -10,7 +11,7 @@
 <body>
 
   <header class="page-header container">
-    <div class="page-header__wrap">
+    <div class="page-header__button-logo-wrap">
       <div class="page-header__logo-wrap">
         <a class="page-header__logo-link" href="/">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38"
@@ -20,9 +21,11 @@
           <img class="page-header__logo-image" src="img/logo-mobile-2.svg" width="101" height="18" alt="Кэт энерджи">
         </a>
       </div>
-      <button class="main-nav-toggle main-nav-toggle--opened" type="button">Показать меню</button>
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
     </div>
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="/">Главная</a>
@@ -54,13 +57,13 @@
     <section class="categories container">
       <div class="categories__wrap">
         <ul class="categories__list">
-          <li class="categories__item category">
+          <li class="categories__item categories__item--small-weight category">
             <h3 class="category__title">Похудение</h3>
             <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="category__link" href="#">Каталог slim</a>
           </li>
-          <li class="categories__item category">
+          <li class="categories__item categories__item--big-weight category">
             <h3 class="category__title">Набор массы</h3>
             <p class="category__text">Заработать авторитет среди дворовых котов и даже
               собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -92,23 +95,25 @@
 
     <section class="effect">
       <div class="effect__wrap container">
-        <h2 class="effect__title">Живой пример</h2>
-        <p class="effect__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-          по 16 часов в день. </p>
-        <div class="effect__example-wrap">
-          <ul class="effect__example-list example-list">
-            <li class="example-list__item">
-              <p class="example-list__value">5 кг</p>
-              <p class="example-list__desc">снижение веса</p>
-            </li>
-            <li class="example-list__item">
-              <p class="example-list__value">60 дней</p>
-              <p class="example-list__desc">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="effect__example-price">затраты на питание: <span class="effect__example-price-value">15 000
-              руб.</span></p>
+        <div class="effect__content-wrap">
+          <h2 class="effect__title">Живой пример</h2>
+          <p class="effect__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по 16 часов в день. </p>
+          <div class="effect__example-wrap">
+            <ul class="effect__example-list example-list">
+              <li class="example-list__item">
+                <p class="example-list__value">5 кг</p>
+                <p class="example-list__desc">снижение веса</p>
+              </li>
+              <li class="example-list__item">
+                <p class="example-list__value">60 дней</p>
+                <p class="example-list__desc">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="effect__example-price">затраты на питание: <span class="effect__example-price-value">15 000
+                руб.</span></p>
+          </div>
         </div>
         <div class="effect__slider effect-slider">
           <img class="effect-slider__image" src="img/effect-cat-before.png" width="280" height="232"
@@ -124,7 +129,7 @@
       </div>
     </section>
 
-    <section class="contacts container">
+    <section class="contacts">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text-wrap">
