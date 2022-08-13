@@ -43,12 +43,12 @@
   </header>
 
   <main class="page-main">
-    <form class="page-main__form form container" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__explanation">Заполните анкету, и мы подберем
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="form__title container">Подбор программы</h1>
+      <p class="form__explanation container">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
 
-      <div class="form__fieldset-wrap">
+      <div class="form__fieldset-wrap container">
         <fieldset class="form__fieldset">
           <div class="form__field-wrap">
             <div class="form__field">
@@ -87,28 +87,33 @@
       </div>
 
       <fieldset class="form__fieldset">
-        <p class="form__title-group">Контактные данные (владельца кота)</p>
-        <div class="form__field-wrap form__field-wrap--contacts">
-          <div class="form__field">
-            <label class="form__label form__label--text" for="email">E-mail:*</label>
-            <input class="form__control form__control--email" type="email" placeholder="kuklachev@gmail.com"
-              name="email" id="email" required>
-          </div>
-          <div class="form__field">
-            <label class="form__label form__label--text" for="phone">Телефон:*</label>
-            <input class="form__control form__control--tel" type="tel" placeholder="8 (960) 900-60-90" name="phone"
-              id="phone" required>
+        <div class="container">
+          <p class="form__title-group">Контактные данные (владельца кота)</p>
+          <div class="form__field-wrap form__field-wrap--contacts">
+            <div class="form__field">
+              <label class="form__label form__label--text" for="email">E-mail:*</label>
+              <input class="form__control form__control--email" type="email" placeholder="kuklachev@gmail.com"
+                name="email" id="email" required>
+            </div>
+            <div class="form__field">
+              <label class="form__label form__label--text" for="phone">Телефон:*</label>
+              <input class="form__control form__control--tel" type="tel" placeholder="8 (960) 900-60-90" name="phone"
+                id="phone" required>
+            </div>
           </div>
         </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
+        <div class="container">
         <label class="form__title-group" for="ongoings">Комментарий</label>
         <textarea class="form__textarea" name="comment" rows="8" id="ongoings"
           placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
+        <div class="container">
         <p class="form__title-group">Дополнительно</p>
         <div class="form__field-wrap form__field-wrap--checkbox">
           <div class="form__field">
@@ -128,9 +133,10 @@
             <label class="form__label form__label--checkbox" for="check-4">Витамины</label>
           </div>
         </div>
+      </div>
       </fieldset>
 
-      <div class="form__send">
+      <div class="form__send container">
         <button class="form__send-button button" type="submit">Отправить заявку</button>
         <p class="form__send-text"><sup>*</sup>— Обязательные поля</p>
       </div>
