@@ -14,8 +14,25 @@
   @include reset-list;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .categories__item {
   padding: 30px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 53px 63px 52px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    padding: 77px 51px 55px 52px;
+  }
 }
