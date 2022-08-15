@@ -7,9 +7,25 @@
   }
 }
 
+.example-list__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid $color-border-hover;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+  }
+}
+
 .example-list__value {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-family: $font-title;
   font-weight: 400;
   font-size: 24px;
@@ -17,14 +33,33 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-text-second;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-list__desc {
+  position: absolute;
+  bottom: -20px;
+  width: 87px;
+  padding: 3px;
   margin: 0;
+  background-color: $color-bg-second;
   font-family: $font-main;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
   text-align: center;
   color: $color-text;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    bottom: -10px;
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+    background-color: $color-base;
+  }
 }

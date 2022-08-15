@@ -1,12 +1,27 @@
 .effect {
   background-color: $color-bg-second;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $color-base 0, $color-base 619px, $color-bg-second 619px);
+  }
+
+  @media (min-width: $dekstop-width) {
+    background: linear-gradient(to bottom, $color-base 0, $color-base 135px, $color-bg-second 135px);
+  }
 }
 
 .effect__wrap {
   padding-top: 25px;
   padding-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 101px;
+  }
+
   @media (min-width: $dekstop-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
     display: flex;
     justify-content: space-between;
   }
@@ -20,6 +35,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $color-text-second;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .effect__text {
@@ -31,8 +56,15 @@
   line-height: 18px;
   color: $color-text;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
   @media (min-width: $dekstop-width) {
     width: 436px;
+    margin-bottom: 69px;
   }
 }
 
@@ -44,10 +76,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 104px;
   }
 
   @media (min-width: $dekstop-width) {
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
@@ -76,6 +110,7 @@
   color: $color-text-second;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     text-align: right;
   }
 
@@ -85,7 +120,6 @@
 }
 
 .effect__example-price-value {
-
   @media (min-width: $tablet-width) {
     display: block;
     text-align: left;
