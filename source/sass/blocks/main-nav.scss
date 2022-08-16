@@ -30,15 +30,11 @@
   padding: 22px 0 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 12px;
+    padding: 0 0 8px;
 
     &:not(:first-child) {
       margin-left: 35px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
   }
 }
 
@@ -57,6 +53,18 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $color-bg;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $dekstop-width) {
@@ -64,6 +72,10 @@
     font-size: 20px;
     line-height: 30px;
     color: $color-text-third;
+
+    &--active {
+      border-bottom: 2px solid $color-base;
+    }
   }
 }
 
