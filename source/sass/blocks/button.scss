@@ -33,5 +33,14 @@
   &--second {
     color: $color-text;
     background-color: $color-bg-second;
+
+    &:hover {
+      background-color: $color-bg-second-hover;
+    }
+
+    &:active {
+      background-color: rgba($color-bg-second-hover, 0.3);
+      color: rgba($color-text, 0.3);
+    }
   }
 }

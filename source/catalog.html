@@ -244,10 +244,12 @@
         </li>
 
         <li class="products__item catalog-show">
+          <div class="catalog-show__container">
           <div class="catalog-show__wrap">
             <p class="catalog-show__text">Показать еще 100500 товаров</p>
             <p class="catalog-show__text-small">На самом деле вкусов гораздо больше!</p>
             <a class="catalog-show__button button button--second" href="#">Показать все</a>
+          </div>
           </div>
         </li>
       </ul>
@@ -288,15 +290,21 @@
       </div>
     </section>
 
-    <section class="contacts contacts--bg-other">
+    <section class="contacts">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text-wrap">
           <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+          <div>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716055035!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660566181330!5m2!1sru!2sru"
+          style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
