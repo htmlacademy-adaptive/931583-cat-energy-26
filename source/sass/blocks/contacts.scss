@@ -1,5 +1,9 @@
 .contacts {
   position: relative;
+
+  &--bg-grey {
+    background-color: $color-bg-second;
+  }
 }
 
 .contacts__text-wrap {
