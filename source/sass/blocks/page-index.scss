@@ -3,14 +3,31 @@
 
   @media (min-width: $dekstop-width) {
     &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 694px;
       content: "";
-      background-color: rgba($color-bg, 0.85);
+      position: absolute;
+      height: 694px;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      right: 0;
       z-index: -1;
+      background-color: #63a73a;
+      background-image: url(../img/program-background-dekstop.png);
+      background-position: top right;
+      background-repeat: no-repeat;
     }
+
+    // &::before {
+    //   position: absolute;
+    //   width: 720px;
+    //   height: 694px;
+    //   top: 0;
+    //   right: 0;
+    //   content: "";
+    //   z-index: -2;
+    //   background-image: url(../img/program-background-dekstop.jpg);
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    // }
   }
 }

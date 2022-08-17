@@ -71,9 +71,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: $color-text-third;
 
-    &--active {
+    &--index {
+      color: $color-base;
+    }
+
+    &--active.main-nav__link--index {
       border-bottom: 2px solid $color-base;
     }
   }

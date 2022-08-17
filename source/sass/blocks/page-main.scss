@@ -9,6 +9,15 @@
   line-height: 36px;
   color: $color-text-second;
   border-bottom: 1px solid $color-border;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 82px;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
 }
 
 .page-main__catalog {

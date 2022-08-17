@@ -62,4 +62,8 @@
     width: max-content;
     background-color: $color-base;
   }
+
+  @media (min-width: $dekstop-width) {
+    background-color: $color-bg-second;
+  }
 }
