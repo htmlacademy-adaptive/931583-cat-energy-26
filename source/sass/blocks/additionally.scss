@@ -1,5 +1,6 @@
 .additionally {
   position: relative;
+  margin-bottom: 25px;
 
   &::before {
     position: absolute;
@@ -13,10 +14,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+
     &::before {
       left: auto;
       top: 22px;
     }
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 86px;
   }
 }
 
@@ -48,6 +55,19 @@
   }
 }
 
+.additionally__list {
+  @include reset-list;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .additionally__item {
   padding-top: 13px;
   padding-bottom: 19px;
@@ -71,11 +91,6 @@
     align-items: center;
     padding: 15px 0 17px;
   }
-}
-
-.additionally__list {
-  @include reset-list;
-  margin-bottom: 35px;
 }
 
 .additionally__title {
