@@ -1,7 +1,8 @@
 .button {
-  display: block;
-  width: 100%;
-  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
@@ -12,13 +13,36 @@
   text-decoration: none;
   border: none;
 
+  &:hover {
+    background-color: $color-bg-hover;
+  }
+
+  &:active {
+    color: rgba($color-text-btn, 0.5);
+  }
+
   &--program {
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 14px 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &--second {
     color: $color-text;
     background-color: $color-bg-second;
+
+    &:hover {
+      background-color: $color-bg-second-hover;
+    }
+
+    &:active {
+      background-color: rgba($color-bg-second-hover, 0.3);
+      color: rgba($color-text, 0.3);
+    }
   }
 }

@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $dekstop-width) {
@@ -17,23 +18,31 @@
   padding: 10px 0 17px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
-.page-header__logo-wrap {
-  width: 191px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+.page-header__main-nav {
   @media (min-width: $tablet-width) {
-    width: 174px;
+    margin-top: 10px;
   }
 }
 
 .page-header__logo-image {
+  display: block;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-link {
   display: block;
 }

@@ -1,12 +1,19 @@
-.program {
-  padding-top: 27px;
-}
-
 .program__wrap {
   position: relative;
+  padding-top: 27px;
   margin-bottom: 20px;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $dekstop-width) {
+    padding-top: 112px;
+    margin-bottom: 82px;
+  }
+
+  @media (max-width: calc($tablet-width - 1px)) {
     &::before,
     &::after {
       position: absolute;
@@ -19,14 +26,27 @@
     }
 
     &::after {
-      background-image: url("../img/program-background-mobile.jpg");
+      background-image: url("../img/program-background-mobile.png");
       background-position: center;
       background-repeat: no-repeat;
     }
 
     &::before {
-      background: linear-gradient(180deg, $color-bg 0, $color-bg 302px, #ffffff 302px, #ffffff 100%);
+      background: linear-gradient(180deg, #63a73a 0, #63a73a 302px, #ffffff 302px, #ffffff 100%);
     }
+  }
+}
+
+.program__content-wrap {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 87px;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    padding-left: 80px;
+    padding-bottom: 185px;
   }
 }
 
@@ -40,6 +60,15 @@
   line-height: 36px;
   text-align: center;
   color: $color-text-third;
+
+  @media (min-width: $tablet-width) {
+    max-width: 515px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-text-second;
+    text-align: left;
+  }
 }
 
 .program__text {
@@ -53,11 +82,48 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-text-third;
+
+  @media (min-width: $tablet-width) {
+    max-width: 515px;
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-text-second;
+    text-align: left;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 52px;
+  }
 }
 
-// .program__image {
-//   @media (min-width: $tablet-width) {
-//     position: absolute;
-//     bottom: 0;
-//   }
-// }
+.program__button {
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+.program__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $dekstop-width) {
+    position: absolute;
+    right: auto;
+    left: 700px;
+    top: 0;
+    bottom: auto;
+    margin: 0;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,20 @@
+.page-index {
+  position: relative;
+
+  @media (min-width: $dekstop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 694px;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #63a73a;
+      background-image: url("../img/program-background-dekstop.png");
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+  }
+}

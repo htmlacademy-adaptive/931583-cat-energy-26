@@ -1,9 +1,24 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
+
+  &:hover svg {
+    fill: $color-bg;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 22px;
+  }
 }
 
-.copyright__link {
+.copyright__text {
   display: flex;
   align-items: center;
   font-family: $font-main;
