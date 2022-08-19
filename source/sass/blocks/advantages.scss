@@ -49,19 +49,19 @@
   }
 
   &--first::before {
-    background-image: url(../../img/icons/advantages-leaf.svg);
+    background-image: url("../img/icons/advantages-leaf.svg");
   }
 
   &--second::before {
-    background-image: url(../../img/icons/advantages-powder.svg);
+    background-image: url("../img/icons/advantages-powder.svg");
   }
 
   &--third::before {
-    background-image: url(../../img/icons/advantages-dining.svg);
+    background-image: url("../img/icons/advantages-dining.svg");
   }
 
   &--fourth::before {
-    background-image: url(../../img/icons/advantages-clock.svg);
+    background-image: url("../img/icons/advantages-clock.svg");
   }
 
   @media (min-width: $tablet-width) {

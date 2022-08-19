@@ -6,7 +6,7 @@
     position: absolute;
     left: 20px;
     top: 16px;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 2px;
     background-color: $color-bg;
     content: "";
@@ -17,6 +17,7 @@
     margin-bottom: 76px;
 
     &::before {
+      width: 100%;
       left: auto;
       top: 22px;
     }
