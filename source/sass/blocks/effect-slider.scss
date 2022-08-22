@@ -83,14 +83,14 @@
     width: 24px;
     height: 18px;
     margin: auto;
-    background-image: url("../img/icons/arrows-slider-button.svg") no-repeat center;
+    background: url("../img/icons/arrows-slider-button.svg") no-repeat center;
   }
 
   &:hover {
     border-color: $color-bg;
 
     &::before {
-      background-image: url("../img/icons/arrows-slider-button-hover.svg");
+      background: url("../img/icons/arrows-slider-button-hover.svg");
     }
 
     & ~ .effect-slider__button-line {
