@@ -1160,13 +1160,13 @@ img {
   width: 24px;
   height: 18px;
   margin: auto;
-  background-image: url("../img/icons/arrows-slider-button.svg") no-repeat center;
+  background: url("../img/icons/arrows-slider-button.svg") no-repeat center;
 }
 .effect-slider__button:hover {
   border-color: #69b738;
 }
 .effect-slider__button:hover::before {
-  background-image: url("../img/icons/arrows-slider-button-hover.svg");
+  background: url("../img/icons/arrows-slider-button-hover.svg");
 }
 .effect-slider__button:hover ~ .effect-slider__button-line {
   background-color: #69b738;
