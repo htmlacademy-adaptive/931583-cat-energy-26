@@ -33,6 +33,7 @@
 
 .page-header__logo-image {
   display: block;
+  max-width: 100%;
 
   &:hover {
     opacity: 0.85;
@@ -45,4 +46,13 @@
 
 .page-header__logo-link {
   display: block;
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 174px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    max-width: 202px;
+  }
 }

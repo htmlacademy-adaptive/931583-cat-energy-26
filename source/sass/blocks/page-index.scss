@@ -12,9 +12,14 @@
       right: 0;
       z-index: -1;
       background-color: #63a73a;
-      background-image: url("../img/program-background-dekstop.png");
+      background-image: url("../img/program-background-dekstop@1x.png");
       background-position: top right;
       background-repeat: no-repeat;
+      background-size: auto 697px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/program-background-dekstop@2x.png");
+      }
     }
   }
 }
