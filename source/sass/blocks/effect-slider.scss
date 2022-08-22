@@ -1,7 +1,104 @@
-.effect-slider__image {
-  margin-bottom: 15px;
+.effect-slider {
+  margin: 0 auto;
+  position: relative;
+  width: 280px;
+  max-height: 256px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    max-height: 512px;
+  }
 }
 
-.effect-slider__range {
-  margin: 0 auto;
+.effect-slider__image-wrap {
+  overflow: hidden;
+}
+
+.effect-slider__image {
+  display: block;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+
+  &--after {
+    position: relative;
+    right: 140px;
+
+    @media (min-width: $tablet-width) {
+      right: 280px;
+    }
+  }
+}
+
+.effect-slider__button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 4px;
+    height: 256px;
+    background-color: #666666;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 24px;
+    height: 18px;
+    margin: auto;
+    background: url("../../img/icons/arrows-slider-button.svg") no-repeat center;
+  }
+
+  &:hover {
+    border-color: $color-bg;
+
+    &::before {
+      background-color: $color-bg;
+    }
+
+    &::after {
+      background-image: url("../../img/icons/arrows-slider-button-hover.svg");
+    }
+  }
+
+  &:active {
+    border-color: #9ecc83;
+
+    &::before {
+      background-color: #9ecc83;
+    }
+
+    &::after {
+      opacity: 0.6;
+    }
+  }
 }
