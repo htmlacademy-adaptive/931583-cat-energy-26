@@ -1111,6 +1111,30 @@ img {
   }
 }
 
+.effect-slider__button-wrap {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 100%;
+}
+
+.effect-slider__button-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+}
+
 .effect-slider__button {
   position: absolute;
   left: 0;
@@ -1124,25 +1148,9 @@ img {
   border: 2px solid #666666;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 2;
 }
 .effect-slider__button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 4px;
-  height: 256px;
-  background-color: #666666;
-}
-@media (min-width: 768px) {
-  .effect-slider__button::before {
-    height: 512px;
-  }
-}
-.effect-slider__button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1158,19 +1166,19 @@ img {
   border-color: #69b738;
 }
 .effect-slider__button:hover::before {
-  background-color: #69b738;
-}
-.effect-slider__button:hover::after {
   background-image: url("../../img/icons/arrows-slider-button-hover.svg");
+}
+.effect-slider__button:hover ~ .effect-slider__button-line {
+  background-color: #69b738;
 }
 .effect-slider__button:active {
   border-color: #9ecc83;
 }
 .effect-slider__button:active::before {
-  background-color: #9ecc83;
-}
-.effect-slider__button:active::after {
   opacity: 0.6;
+}
+.effect-slider__button:active ~ .effect-slider__button-line {
+  background-color: #9ecc83;
 }
 
 .range {
