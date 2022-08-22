@@ -580,7 +580,7 @@ img {
   left: 22px;
   height: 53px;
   width: 50px;
-  background: url("../img/category-small-weight.svg") no-repeat center;
+  background-image: url("../img/category-small-weight.svg") no-repeat center;
   background-size: contain;
 }
 .category--big-weight::before {
@@ -588,7 +588,7 @@ img {
   left: 13px;
   height: 50px;
   width: 67px;
-  background: url("../img/category-big-weight.svg") no-repeat center;
+  background-image: url("../img/category-big-weight.svg") no-repeat center;
   background-size: contain;
 }
 @media (min-width: 768px) {
