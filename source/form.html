@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Кэт энерджи: Подбор программы</title>
 </head>
 
@@ -12,9 +16,12 @@
 
   <header class="page-header container">
     <div class="page-header__button-logo-wrap">
-      <a class="page-header__logo-link" href="/">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
-          alt="Логотип Кэт энерджи">
+      <a class="page-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1320px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
+        </picture>
       </a>
       <button class="main-nav__toggle main-nav__toggle--nojs main-nav__toggle--closed" type="button">
         <span class="visually-hidden">Показать меню</span>
@@ -23,7 +30,7 @@
     <nav class="page-header__main-nav  main-nav main-nav--nojs main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="/">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -168,7 +175,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrap container">
       <div class="page-footer__logo-wrap">
-        <a class="page-footer__logo" href="/">
+        <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24"
             alt="Логотип Кэт энерджи">
         </a>

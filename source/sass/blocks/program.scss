@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $dekstop-width) {
-    padding-top: 112px;
+    padding-top: 0;
     margin-bottom: 82px;
   }
 
@@ -26,9 +26,14 @@
     }
 
     &::after {
-      background-image: url("../img/program-background-mobile.png");
+      background-image: url("../img/program-background-mobile@1x.png");
       background-position: center;
       background-repeat: no-repeat;
+      background-size: auto 302px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/program-background-mobile@2x.png");
+      }
     }
 
     &::before {
@@ -45,6 +50,7 @@
   }
 
   @media (min-width: $dekstop-width) {
+    padding-top: 112px;
     padding-left: 80px;
     padding-bottom: 185px;
   }
@@ -120,8 +126,8 @@
   @media (min-width: $dekstop-width) {
     position: absolute;
     right: auto;
-    left: 700px;
-    top: 0;
+    left: 448px;
+    top: 32px;
     bottom: auto;
     margin: 0;
     z-index: -1;
