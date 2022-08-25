@@ -114,6 +114,7 @@
 .program__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

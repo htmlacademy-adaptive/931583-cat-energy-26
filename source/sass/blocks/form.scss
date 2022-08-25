@@ -81,6 +81,10 @@
   margin-bottom: 24px;
   border: none;
 
+  &--end {
+    margin-bottom: 34px;
+  }
+
   &--line {
     position: relative;
     padding: 22px 0 19px;
@@ -158,6 +162,8 @@
   }
 
   &--checkbox {
+    gap: 12px;
+
     @media (min-width: $tablet-width) {
       grid-template-columns: 1fr 1fr;
       gap: 32px 123px;
@@ -178,18 +184,20 @@
 }
 
 .form__field {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: max-content auto;
+  gap: 13px;
 }
 
 .form__label {
-  margin-right: 13px;
   font-family: $font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-text;
+  max-width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -316,17 +324,20 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
 
 .form__title-group {
   display: block;
-  width: max-content;
-  max-width: 207px;
-  padding-right: 22px;
+  width: fit-content;
+  padding-right: 20px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   font-family: $font-title;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-text-second;
   background-color: $color-base;
+
+  &--addition {
+    margin-bottom: 34px;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: none;
@@ -342,7 +353,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   display: block;
   flex-grow: 1;
   margin: 0;
-  padding: 12px 15px 13px;
+  padding: 12px 13px 13px;
   border: 1px solid #e7e7e7;
   font-family: $font-title;
   font-weight: 400;
@@ -391,7 +402,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   padding: 10px 14px;
   margin: 0;
   display: block;
-  min-height: 150px;
+  height: 150px;
   width: fill;
   border: 1px solid #e7e7e7;
   font-family: $font-title;
@@ -460,7 +471,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
 
 .form__send-button {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -477,6 +488,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
 
 .form__send-text {
   margin: 0;
+  margin-left: 6px;
   font-family: $font-main;
   font-weight: 400;
   font-size: 14px;
