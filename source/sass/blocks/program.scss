@@ -69,11 +69,15 @@
 
   @media (min-width: $tablet-width) {
     max-width: 515px;
-    margin-bottom: 41px;
+    margin-bottom: 43px;
     font-size: 60px;
     line-height: 60px;
     color: $color-text-second;
     text-align: left;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 38px;
   }
 }
 
@@ -91,7 +95,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 515px;
-    margin-bottom: 49px;
+    margin-bottom: 51px;
     font-size: 20px;
     line-height: 20px;
     color: $color-text-second;
@@ -106,8 +110,13 @@
 .program__button {
   @media (min-width: $tablet-width) {
     width: max-content;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding: 16px 27px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-left: 0;
+    padding-bottom: 18px;
   }
 }
 
@@ -128,7 +137,7 @@
     position: absolute;
     right: auto;
     left: 448px;
-    top: 32px;
+    top: 29px;
     bottom: auto;
     margin: 0;
     z-index: -1;

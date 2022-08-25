@@ -20,13 +20,13 @@
   @media (min-width: $tablet-width) {
     padding-right: 68px;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 128px;
   }
 
   @media (min-width: $dekstop-width) {
     padding-right: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 85px;
+    gap: 80px;
   }
 }
 
@@ -79,7 +79,7 @@
       counter-increment: adv-number;
       content: counter(adv-number) "";
       position: absolute;
-      left: 118px;
+      left: 115px;
       top: 0;
       font-size: 280px;
       line-height: 280px;

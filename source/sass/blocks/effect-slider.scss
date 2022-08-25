@@ -10,6 +10,10 @@
     width: 560px;
     max-height: 512px;
   }
+
+  @media (min-width: $dekstop-width) {
+    margin: 0;
+  }
 }
 
 .effect-slider__image-wrap {

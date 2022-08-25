@@ -65,6 +65,10 @@
   @media (min-width: $dekstop-width) {
     width: 436px;
     margin-bottom: 69px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -76,12 +80,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 104px;
   }
 
   @media (min-width: $dekstop-width) {
     flex-direction: column;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -94,7 +100,7 @@
   }
 
   @media (min-width: $dekstop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
@@ -122,7 +128,8 @@
 .effect__example-price-value {
   @media (min-width: $tablet-width) {
     display: block;
-    text-align: left;
+    text-align: right;
+    margin-top: 8px;
   }
 
   @media (min-width: $dekstop-width) {
