@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 59px 70px;
+    padding: 56px 125px 60px 78px;
     min-height: 200px;
     background-image: url("../img/gifts-tablet@1x.png");
 
@@ -66,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-top: 5px;
   }
 
   @media (min-width: $dekstop-width) {
