@@ -213,6 +213,7 @@
 }
 
 .form__field {
+  position: relative;
   display: grid;
   align-items: center;
   grid-template-columns: max-content auto;
@@ -404,6 +405,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
 }
 
 .form__control {
+  position: relative;
   display: block;
   flex-grow: 1;
   margin: 0;
@@ -454,6 +456,13 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
     border-color: $color-border-error;
     outline: inset 1px $color-border-error;
   }
+}
+
+.form__control-icon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
 }
 
 .form__textarea {

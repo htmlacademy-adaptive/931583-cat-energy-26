@@ -13,14 +13,14 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 60px;
+    padding: 56px 40px 60px;
   }
 
   @media (min-width: $dekstop-width) {
     position: absolute;
     top: 95px;
     min-width: 565px;
-    padding: 59px 76px 60px 80px;
+    padding: 56px 76px 60px 80px;
     background-color: $color-base;
   }
 }
@@ -36,6 +36,7 @@
   color: $color-text-second;
 
   @media (min-width: $tablet-width) {
+    margin-top: 4px;
     width: 172px;
     font-size: 20px;
     line-height: 26px;
@@ -48,7 +49,7 @@
   font-family: $font-main;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   color: $color-text;
 
   @media (min-width: $tablet-width) {
@@ -57,7 +58,7 @@
     text-align: right;
 
     &:first-of-type {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
   }
 
