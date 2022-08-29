@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 289px;
-  padding: 59px 60px 43px;
+  padding: 59px 59px 43px;
   text-decoration: none;
   background-color: rgba($color-bg, 0.85);
   background-image: url("../img/gifts@1x.png");
@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 59px 70px;
+    padding: 56px 125px 60px 78px;
     min-height: 200px;
     background-image: url("../img/gifts-tablet@1x.png");
 
@@ -66,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-top: 5px;
   }
 
   @media (min-width: $dekstop-width) {

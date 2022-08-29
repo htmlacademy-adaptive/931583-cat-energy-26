@@ -18,4 +18,9 @@
     line-height: 60px;
     border: none;
   }
+
+  @media (min-width: $dekstop-width) {
+    padding-top: 76px;
+    padding-bottom: 84px;
+  }
 }

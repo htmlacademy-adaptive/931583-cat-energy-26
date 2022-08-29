@@ -27,7 +27,11 @@
 
 .page-header__main-nav {
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-top: 13px;
   }
 }
 

@@ -2,6 +2,10 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-bottom: 73px;
   }
 }

@@ -2,7 +2,7 @@
   background-color: $color-bg-second;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 55px;
+    padding: 55px 0 55px;
   }
 
   @media (min-width: $dekstop-width) {
@@ -28,8 +28,13 @@
   border-bottom: 1px solid $color-border-second;
 
   @media (min-width: $tablet-width) {
+    margin-top: 8px;
     padding: 0;
     border-bottom: none;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-top: 5px;
   }
 }
 
@@ -51,16 +56,27 @@
   border-bottom: 1px solid $color-border-second;
 
   @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-left: 25px;
     padding: 0;
     border-bottom: none;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-top: 5px;
+    margin-left: 28px;
   }
 }
 
 .page-footer__copyright {
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-top: 2px;
   }
 }

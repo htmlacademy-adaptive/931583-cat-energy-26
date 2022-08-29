@@ -1,6 +1,6 @@
 .additionally {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 
   &::before {
     position: absolute;
@@ -40,7 +40,7 @@
   padding-right: 22px;
   width: max-content;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   font-family: $font-title;
   font-weight: 400;
   font-size: 24px;
@@ -53,6 +53,10 @@
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    margin-left: -36px;
   }
 }
 
@@ -83,14 +87,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 26px 36px 28px;
+    padding: 26px 36px 27px;
   }
 
   @media (min-width: $dekstop-width) {
     flex-wrap: nowrap;
     display: flex;
     align-items: center;
-    padding: 15px 0 17px;
+    padding: 16px 0 15px;
   }
 }
 
@@ -107,6 +111,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
+    margin-left: 3px;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 25px;
@@ -114,7 +119,7 @@
 
   @media (min-width: $dekstop-width) {
     margin-right: 0;
-    min-width: 325px;
+    min-width: 322px;
     margin-bottom: 0;
   }
 }
@@ -129,6 +134,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 49px;
+    margin-top: 3px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 22px;
@@ -151,14 +157,20 @@
   color: $color-text;
 
   @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    margin-right: 3px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 22px;
+    min-width: 44px;
+    text-align: right;
   }
 
   @media (min-width: $dekstop-width) {
     min-width: 82px;
     margin-bottom: 0;
+    margin-right: 0;
+    text-align: left;
   }
 }
 

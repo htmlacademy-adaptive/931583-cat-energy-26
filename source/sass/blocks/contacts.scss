@@ -13,14 +13,14 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 56px;
+    padding: 56px 40px 60px;
   }
 
   @media (min-width: $dekstop-width) {
     position: absolute;
     top: 95px;
     min-width: 565px;
-    padding: 56px 80px;
+    padding: 56px 76px 60px 80px;
     background-color: $color-base;
   }
 }
@@ -36,6 +36,7 @@
   color: $color-text-second;
 
   @media (min-width: $tablet-width) {
+    margin-top: 4px;
     width: 172px;
     font-size: 20px;
     line-height: 26px;
