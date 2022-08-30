@@ -26,13 +26,13 @@
     }
 
     &::after {
-      background-image: url("../img/program-background-mobile@1x.png");
+      background-image: url("../img/backgrounds/program-background-mobile@1x.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: auto 302px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/program-background-mobile@2x.png");
+        background-image: url("../img/backgrounds/program-background-mobile@2x.png");
       }
     }
 
