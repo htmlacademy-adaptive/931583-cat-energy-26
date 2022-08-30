@@ -450,11 +450,27 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   &:focus-visible {
     border-color: #444444;
     outline: inset 1px #444444;
+
+    & ~ .form__control-icon--email {
+      stroke: $color-bg;
+    }
+
+    & ~ .form__control-icon--phone {
+      fill: $color-bg;
+    }
   }
 
   &--error {
     border-color: $color-border-error;
     outline: inset 1px $color-border-error;
+
+    & ~ .form__control-icon--email {
+      stroke: $color-border-error;
+    }
+
+    & ~ .form__control-icon--phone {
+      fill: $color-border-error;
+    }
   }
 }
 
@@ -463,6 +479,15 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   top: 50%;
   right: 14px;
   transform: translateY(-50%);
+
+  &--email {
+    fill: transparent;
+    stroke: #000000;
+  }
+
+  &--phone {
+    fill: #000000;
+  }
 }
 
 .form__textarea {

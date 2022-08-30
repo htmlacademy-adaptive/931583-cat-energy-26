@@ -7,13 +7,13 @@
   padding: 59px 59px 43px;
   text-decoration: none;
   background-color: rgba($color-bg, 0.85);
-  background-image: url("../img/gifts@1x.png");
+  background-image: url("../img/backgrounds/gifts@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/gifts@2x.png");
+    background-image: url("../img/backgrounds/gifts@2x.png");
   }
 
   &::before {
@@ -35,10 +35,10 @@
     flex-direction: row;
     padding: 56px 125px 60px 78px;
     min-height: 200px;
-    background-image: url("../img/gifts-tablet@1x.png");
+    background-image: url("../img/backgrounds/gifts-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/gifts-tablet@2x.png");
+      background-image: url("../img/backgrounds/gifts-tablet@2x.png");
     }
   }
 
@@ -46,10 +46,10 @@
     flex-direction: column;
     padding: 56px 42px 42px;
     min-height: 290px;
-    background-image: url("../img/gifts@1x.png");
+    background-image: url("../img/backgrounds/gifts@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/gifts@2x.png");
+      background-image: url("../img/backgrounds/gifts@2x.png");
     }
   }
 }
