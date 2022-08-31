@@ -9,6 +9,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import uglify from 'gulp-uglify';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -36,8 +37,10 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/scripts.js')
+    .pipe(uglify())
+    .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
