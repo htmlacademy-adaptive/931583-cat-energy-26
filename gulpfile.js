@@ -37,7 +37,7 @@ const html = () => {
 
 // Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/scripts.js')
     .pipe(uglify())
     .pipe(rename('scripts.min.js'))

@@ -1,16 +1,18 @@
 .main-nav {
-  @media (max-width: calc($tablet-width - 1px)) {
-    &--closed {
-      display: none;
-    }
+  &--opened {
+    display: block;
+  }
 
-    &--opened {
-      display: block;
-    }
+  &--nojs {
+    display: block;
+  }
 
-    &--nojs {
-      display: block;
-    }
+  &--closed {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -29,18 +31,18 @@
 .main-nav__item {
   position: relative;
   padding: 22px 0 24px;
-
-  @media (max-width: calc($tablet-width - 1px)) {
-    border-top: 1px solid #e6e6e6;
-    margin-left: -20px;
-    margin-right: -20px;
-  }
+  border-top: 1px solid #e6e6e6;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-top: none;
+    margin-right: 0;
+    margin-left: 0;
 
     &:not(:first-child) {
-      margin-left: 36px;
+      margin-left: 37px;
     }
   }
 }

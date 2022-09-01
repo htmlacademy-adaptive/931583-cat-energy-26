@@ -96,10 +96,7 @@
   font-weight: 400;
   line-height: 18px;
   color: $color-text;
-
-  @media (max-width: calc($tablet-width - 1px)) {
-    border-bottom: 1px solid $color-border-second;
-  }
+  border-bottom: 1px solid $color-border-second;
 
   @media (min-width: $tablet-width) {
     max-width: 340px;
@@ -108,6 +105,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-text-second;
+    border-bottom: none;
   }
 
   @media (min-width: $dekstop-width) {

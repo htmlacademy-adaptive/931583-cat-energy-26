@@ -27,12 +27,12 @@
 
   @media (min-width: $tablet-width) {
     height: 100%;
-    padding: 161px 36px 39px;
+    padding: 157px 36px 39px;
     border: 2px solid $color-bg-second;
 
     &::before,
     &::after {
-      top: 82px;
+      top: 78px;
       width: 60px;
     }
   }

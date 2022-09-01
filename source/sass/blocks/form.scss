@@ -90,24 +90,22 @@
     position: relative;
     padding: 22px 0 19px;
 
-    @media (max-width: calc($tablet-width - 1px)) {
-      &::before,
-      &::after {
-        position: absolute;
-        left: -20px;
-        content: "";
-        height: 1px;
-        width: calc(100% + 40px);
-        background-color: $color-border-second;
-      }
+    &::before,
+    &::after {
+      position: absolute;
+      margin-left: -20px;
+      content: "";
+      height: 1px;
+      width: calc(100% + 40px);
+      background-color: $color-border-second;
+    }
 
-      &::before {
-        top: 0;
-      }
+    &::before {
+      top: 0;
+    }
 
-      &::after {
-        bottom: 0;
-      }
+    &::after {
+      bottom: 0;
     }
   }
 
@@ -118,6 +116,11 @@
       padding: 0;
       border: none;
       margin-bottom: 75px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     &--contacts {

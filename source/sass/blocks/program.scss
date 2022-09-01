@@ -13,31 +13,36 @@
     margin-bottom: 82px;
   }
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 302px;
+    z-index: -1;
+  }
+
+  &::after {
+    background-image: url("../img/backgrounds/program-background-mobile@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 302px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/program-background-mobile@2x.png");
+    }
+  }
+
+  &::before {
+    background: linear-gradient(180deg, #63a73a 0, #63a73a 304px, #ffffff 304px, #ffffff 100%);
+  }
+
+  @media (min-width: $tablet-width) {
     &::before,
     &::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 302px;
-      z-index: -1;
-    }
-
-    &::after {
-      background-image: url("../img/backgrounds/program-background-mobile@1x.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto 302px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/backgrounds/program-background-mobile@2x.png");
-      }
-    }
-
-    &::before {
-      background: linear-gradient(180deg, #63a73a 0, #63a73a 302px, #ffffff 302px, #ffffff 100%);
+      display: none;
     }
   }
 }
