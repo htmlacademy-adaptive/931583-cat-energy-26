@@ -461,6 +461,10 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
     & ~ .form__control-icon--phone {
       fill: $color-bg;
     }
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &--error {
@@ -498,7 +502,7 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   margin: 0;
   display: block;
   height: 150px;
-  width: fill;
+  width: 100%;
   border: 1px solid #e7e7e7;
   font-family: $font-title;
   font-weight: 400;
@@ -543,6 +547,10 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   &:focus-visible {
     border-color: #444444;
     outline: inset 1px #444444;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &--error {
