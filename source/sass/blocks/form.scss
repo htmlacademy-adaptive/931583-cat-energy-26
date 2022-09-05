@@ -238,7 +238,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-text;
-  max-width: 100%;
+  max-width: 550px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -367,6 +367,18 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
   opacity: 0.3;
 }
 
+input[type="radio"]:focus + .form__label--radio,
+input[type="checkbox"]:focus + .form__label--checkbox,
+input[type="radio"]:focus-visible + .form__label--radio,
+input[type="checkbox"]:focus-visible + .form__label--checkbox {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
 .form__title-group {
   display: block;
   width: fit-content;
@@ -467,6 +479,8 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
     }
   }
 
+  // этот класс добавляет состояние ошибки у input
+
   &--error {
     border-color: $color-border-error;
     outline: inset 1px $color-border-error;
@@ -552,6 +566,8 @@ input[type="checkbox"]:disabled + .form__label--checkbox {
       color: transparent;
     }
   }
+
+  // этот класс добавляет состояние ошибки у textarea
 
   &--error {
     border-color: $color-border-error;
