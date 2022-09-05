@@ -1,18 +1,26 @@
 .main-nav {
   &--opened {
     display: block;
-  }
-
-  &--nojs {
-    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    right: 0;
+    background-color: #ffffff;
   }
 
   &--closed {
     display: none;
   }
 
+  &--nojs {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
+    position: relative;
+    width: auto;
+    max-width: 600px;
   }
 }
 
@@ -31,15 +39,23 @@
 .main-nav__item {
   position: relative;
   padding: 22px 0 24px;
-  border-top: 1px solid #e6e6e6;
   margin-left: -20px;
   margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    border-top: none;
+    border-top: 0;
     margin-right: 0;
     margin-left: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
 
     &:not(:first-child) {
       margin-left: 37px;
@@ -89,65 +105,5 @@
     &--active.main-nav__link--index {
       border-bottom: 2px solid $color-base;
     }
-  }
-}
-
-.main-nav__toggle {
-  position: relative;
-  display: block;
-  margin-top: 5px;
-  width: 25px;
-  height: 19px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  &--closed {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 25px;
-      height: 2px;
-      background-color: #222222;
-      box-shadow: 0 8px #222222, 0 16px #222222;
-    }
-  }
-
-  &--opened {
-    width: 19px;
-    height: 19px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 19px;
-      height: 2px;
-      transform: rotate(-45deg);
-      box-shadow: none;
-      background-color: #000000;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 19px;
-      height: 2px;
-      transform: rotate(45deg);
-      box-shadow: none;
-      background-color: #000000;
-    }
-  }
-
-  &--nojs {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    @include visually-hidden;
   }
 }

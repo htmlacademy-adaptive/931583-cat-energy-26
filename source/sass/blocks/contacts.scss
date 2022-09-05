@@ -70,9 +70,18 @@
 .contacts__map {
   display: flex;
   min-height: 362px;
+  background-image: url("../img/backgrounds/location-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    background-image: url("../img/backgrounds/location-tablet.png");
+  }
+
+  @media (min-width: $dekstop-width) {
+    background-image: url("../img/backgrounds/location-dekstop.png");
   }
 
   iframe {
