@@ -355,22 +355,22 @@
   }
 }
 
-input[type="radio"]:checked + .form__label--radio,
-input[type="checkbox"]:checked + .form__label--checkbox {
+.form__input--radio:checked + .form__label--radio,
+.form__input--checkbox:checked + .form__label--checkbox {
   &::after {
     display: block;
   }
 }
 
-input[type="radio"]:disabled + .form__label--radio,
-input[type="checkbox"]:disabled + .form__label--checkbox {
+.form__input--radio:disabled + .form__label--radio,
+.form__input--checkbox:disabled + .form__label--checkbox {
   opacity: 0.3;
 }
 
-input[type="radio"]:focus + .form__label--radio,
-input[type="checkbox"]:focus + .form__label--checkbox,
-input[type="radio"]:focus-visible + .form__label--radio,
-input[type="checkbox"]:focus-visible + .form__label--checkbox {
+.form__input--radio:focus + .form__label--radio,
+.form__input--checkbox:focus + .form__label--checkbox,
+.form__input--radio:focus-visible + .form__label--radio,
+.form__input--checkbox:focus-visible + .form__label--checkbox {
   outline: 2px solid #000000;
   outline-offset: 2px;
 
